@@ -1,8 +1,13 @@
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 10px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 header .logo {
@@ -12,18 +17,30 @@ header .logo {
     font-family: 'Brush Script MT', cursive;
 }
 
-header .navbar a {
-    padding: 0 20px;
-    margin-right: 70px;
-    font-size: 20px;
-    color: white;
+header .navbar {
+    margin-right: 190px;
+    margin-top: 7px;
 }
 
-body {
-    background-image: url('/image/g3.jpg');
-    background-size: cover;
+header .navbar a {
+    padding: 0 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+header .navbar a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+.home {
+    background-image: url('/image/Fitness Gym Background.jpg');
     background-position: center;
-    height: 300px;
-    text-align: center;
-    padding-top: 23px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
