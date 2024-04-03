@@ -1,34 +1,61 @@
+body{
+    margin: 0px;
+}
 #header{
+    background-color: #333;
     display: flex;
-    background-color: #333; /* Example background color */
-    color: #fff; /* Example text color */
-}
-
-#logo{
-    display: flex;
+    justify-content: space-between;
+    color: white;
     align-items: center;
-    margin-left: 20px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.1);
 }
-
 .list ul{
     list-style: none;
     display: flex;
-    justify-content: flex-end;
 }
 
-.list ul li{
-    margin: 0 10px;
+#logo{
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
-
-a{
+.list li{
+    padding: 0 15px;
+}
+.list a{
     text-decoration: none;
-    color: #ffffff; /* Adjusts link color */
-    /*margin: auto;*/
+    text-underline: none;
+    transition: background-color 0.3s ease,color 0.3s ease;
+    padding: 10px 15px;
+    color: white;
+    /*display: block;*/
 }
 
-#list li a:hover {
-    background-color: darkgrey;
+.list a:hover{
+    background-color: white;
+    color: #333333;
 }
+
+#hero {
+    background-image: url('/image/Fitness Gym Background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*@media (max-width: 768px) {*/
+/*    .list ul{*/
+/*        flex-direction: column;*/
+/*        align-items: center;*/
+/*    }*/
+/*    .list a {*/
+/*        padding: 15px 0;*/
+/*    }*/
+/*}*/
